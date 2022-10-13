@@ -1,18 +1,9 @@
-[build-system]
-requires = [
-    "setuptools>=62.0",
-    "wheel",
-    "setuptools_scm>=7.0",
-]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "dlong"
 description = "Prototype framework for projected socio-economic climate damages"
 readme = "README.md"
 dynamic = ["version"]
 classifiers = [
-    "Development Status :: 1 - Planning",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: Apache Software License",
@@ -22,8 +13,6 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 requires-python = ">=3.8"
-dependencies = [
-]
 
 [project.optional-dependencies]
 test = [
@@ -33,9 +22,6 @@ test = [
     "pytest",
     "pytest-cov",
 ]
-docs = [
-    "pdoc",
-]
 
 [project.urls]
 Homepage = "https://github.com/brews/dlong"
@@ -43,8 +29,14 @@ Documentation = "https://github.com/brews/dlong"
 Source = "https://github.com/brews/dlong"
 "Bug Tracker" = "https://github.com/brews/dlong/issues"
 
-[tool.setuptools]
-packages = ["dlong"]
+[build-system]
+requires = [
+    "setuptools>=62.0",
+    "wheel",
+    "setuptools_scm>=7.0",
+]
+build-backend = "setuptools.build_meta"
+
 
 [tool.setuptools_scm]
 fallback_version = "999"

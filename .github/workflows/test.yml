@@ -30,7 +30,7 @@ jobs:
           flake8
       - name: Type check with mypy
         run: |
-          mypy src/dearprudence
+          mypy src/dlong
       - name: Test with pytest
         run: |
           pytest -v --cov dlong --cov-report term-missing --cov-report xml

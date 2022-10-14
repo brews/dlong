@@ -1,3 +1,6 @@
+[![Test](https://github.com/brews/dlong/actions/workflows/test.yml/badge.svg)](https://github.com/brews/dlong/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/brews/dlong/branch/main/graph/badge.svg?token=NZI5NI6RSH)](https://codecov.io/gh/brews/dlong)
+
 # dlong
 Prototype framework for projected socio-economic climate damages
 

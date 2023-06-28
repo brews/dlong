@@ -42,3 +42,6 @@ fallback-version = "999"
 
 [tool.hatch.build.hooks.vcs]
 version-file = "src/dlong/_version.py"
+
+[tool.black]
+extend-exclude = "_version.py"

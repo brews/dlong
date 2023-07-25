@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - Switch package build system from setuptools to hatch.
+### Fixed
+- Fixed bad release links in CHANGELOG.
 
 ## [0.1.0] - 2022-10-13
  - Initial release.
+
+[unreleased]: https://github.com/brews/dlong/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/brews/dlong/releases/tag/v0.1.0

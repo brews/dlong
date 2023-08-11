@@ -20,7 +20,7 @@ dependencies = [
 [project.optional-dependencies]
 test = [
     "black",
-    "flake8",
+    "ruff",
     "mypy",
     "pytest",
     "pytest-cov",
@@ -48,5 +48,19 @@ exclude = [
     "/.github",
 ]
 
-[tool.black]
-extend-exclude = "_version.py"
+[tool.ruff]
+# E402: module level import not at top of file
+# E501: line too long - let black worry about that
+ignore = [
+    "E402",
+    "E501",
+]
+select = [
+    # Pyflakes
+    "F",
+    # Pycodestyle
+    "E",
+    "W",
+    # Pyupgrade
+    "UP",
+]

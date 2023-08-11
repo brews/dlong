@@ -27,7 +27,7 @@ jobs:
           black --check .
       - name: Format check with flake8
         run: |
-          flake8
+          ruff check .
       - name: Type check with mypy
         run: |
           mypy src/dlong

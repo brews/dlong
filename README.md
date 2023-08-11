@@ -1,4 +1,4 @@
-[![Test](https://github.com/brews/dlong/actions/workflows/pythonpackage.yml/badge.svg)](https://github.com/brews/dlong/actions/workflows/pythonpackage.yml)
+[![pythonpackage](https://github.com/brews/dlong/actions/workflows/pythonpackage.yml/badge.svg)](https://github.com/brews/dlong/actions/workflows/pythonpackage.yml)
 [![codecov](https://codecov.io/gh/brews/dlong/branch/main/graph/badge.svg?token=NZI5NI6RSH)](https://codecov.io/gh/brews/dlong)
 
 # dlong

@@ -27,7 +27,7 @@ class FractionalDiscount:
         return (
             self.rate == other.rate
             and self.reference_year == other.reference_year
-            and type(self) == type(other)
+            and type(self) is type(other)
         )
 
     def apply(self, damages: Damages) -> DiscountedDamages:

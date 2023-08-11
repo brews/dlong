@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Added `dlong.__version__`.
 ### Changed
+- Exclude .github from source builds.
 - Switch package build system from setuptools to hatchling.
 ### Fixed
 - Minor code smell cleanup in `FractionalDiscount.__eq__`.

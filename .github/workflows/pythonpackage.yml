@@ -1,4 +1,4 @@
-name: Test
+name: Python package
 
 on:
   push:
@@ -33,6 +33,6 @@ jobs:
           mypy src/dlong
       - name: Test with pytest
         run: |
-          pytest -v --cov dlong --cov-report term-missing --cov-report xml
+          pytest -vv --cov-report term-missing --cov-report xml
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3

@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
 [project]
 name = "dlong"
 description = "Prototype framework for projected socio-economic climate damages"
@@ -32,10 +36,6 @@ Documentation = "https://github.com/brews/dlong"
 Source = "https://github.com/brews/dlong"
 "Bug Tracker" = "https://github.com/brews/dlong/issues"
 
-[build-system]
-requires = ["hatchling", "hatch-vcs"]
-build-backend = "hatchling.build"
-
 [tool.hatch.version]
 source = "vcs"
 fallback-version = "999"
@@ -47,6 +47,9 @@ version-file = "src/dlong/_version.py"
 exclude = [
     "/.github",
 ]
+
+[tool.pytest.ini_options]
+addopts = "--cov=dlong"
 
 [tool.ruff]
 # E402: module level import not at top of file

@@ -22,12 +22,16 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+docs = [
+    "mkdocs",
+    "mkdocstrings[python]",
+    "mkdocs-material",
+]
 test = [
-    "black",
-    "ruff",
     "mypy",
     "pytest",
     "pytest-cov",
+    "ruff>=0.1.7",
 ]
 
 [project.urls]
@@ -53,10 +57,8 @@ addopts = "--cov=dlong"
 
 [tool.ruff]
 # E402: module level import not at top of file
-# E501: line too long - let black worry about that
 ignore = [
     "E402",
-    "E501",
 ]
 select = [
     # Pyflakes

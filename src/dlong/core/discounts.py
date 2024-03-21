@@ -1,6 +1,7 @@
 """
 Discounting strategies to apply to Damages
 """
+
 from ..types import Damages, DiscountedDamages
 
 

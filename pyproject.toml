@@ -50,7 +50,7 @@ exclude = [
 [tool.pytest.ini_options]
 addopts = "--cov=dlong"
 
-[tool.ruff]
+[tool.ruff.lint]
 # E402: module level import not at top of file
 ignore = [
     "E402",

@@ -26,15 +26,12 @@ jobs:
         run: |
           pip install .[test]
       - name: Format check with ruff
-        continue-on-error: true
         run: |
           ruff format . --diff
       - name: Lint check with ruff
-        continue-on-error: true
         run: |
           ruff check . --output-format=github
       - name: Type check with mypy
-        continue-on-error: true
         run: |
           mypy src/dlong
       - name: Test with pytest

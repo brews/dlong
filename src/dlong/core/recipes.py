@@ -1,5 +1,6 @@
 """
-Contains various recipes for calculating damages from hazards and then applying discounting.
+Contains various recipes for calculating damages from hazards and then
+applying discounting.
 """
 
 from ..types import (

@@ -22,7 +22,10 @@ class FractionalDiscount:
         self.reference_year = reference_year
 
     def __repr__(self):
-        return f"{type(self).__name__}(rate={self.rate!r}, reference_year={self.reference_year!r})"
+        return (
+            f"{type(self).__name__}"
+            f"(rate={self.rate!r}, reference_year={self.reference_year!r})"
+        )
 
     def __eq__(self, other):
         return (
@@ -35,5 +38,6 @@ class FractionalDiscount:
         """
         Apply discounting to given damages
         """
-        # TODO: Not sure about the damages.year below. Should be "time"? Are these always going to be annual.
+        # TODO: Not sure about the damages.year below. Should be "time"?
+        #  Are these always going to be annual?
         return damages / (1 + self.rate) ** (damages.year - self.reference_year)

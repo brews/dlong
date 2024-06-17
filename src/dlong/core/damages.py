@@ -9,7 +9,8 @@ class QuadraticDamageModel:
     """
     Example implementation of the dlong.types.DamageModel protocol.
 
-    Damages are computed from input "temperature", given coefficients. Has a quadratic functional form.
+    Damages are computed from input "temperature", given coefficients. Has a
+    quadratic functional form.
 
     Parameters
     ----------

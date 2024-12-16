@@ -34,7 +34,7 @@ damage_coefficients = xr.Dataset(
 
 # Put it all together to describe climate data, a damage function, and
 # a strategy for discounting damages.
-climate = dlong.types.ClimateData(temperature=input_temperature)
+climate = ClimateData(temperature=input_temperature)
 damage_model = dlong.QuadraticDamageModel(coefs=damage_coefficients)
 discount_strategy = dlong.FractionalDiscount(rate=0.02, reference_year=2020)
 # We could use these individually, or combine them into a "recipe" to output 

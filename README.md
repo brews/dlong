@@ -4,7 +4,8 @@
 # dlong
 Prototype framework for projected socio-economic climate damages
 
-This is a prototype. It is likely to change in breaking ways. It might delete all your data so don't use it in production.
+> [!CAUTION]
+> This is a prototype. It is likely to change in breaking ways. It might delete all your data. Don't use it in production.
 
 ## Examples
 ```python
